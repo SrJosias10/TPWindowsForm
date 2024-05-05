@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26A43869-F2C2-45FD-A768-E4FC38F65503}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Actividad2</RootNamespace>
+    <AssemblyName>Actividad2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBusquedaAvanzada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBusquedaAvanzada.Designer.cs">
+      <DependentUpon>FormBusquedaAvanzada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarArticulo.Designer.cs">
+      <DependentUpon>FormEliminarArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarCategoria.Designer.cs">
+      <DependentUpon>FormEliminarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarMarca.Designer.cs">
+      <DependentUpon>FormEliminarMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgregarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarArticulo.Designer.cs">
+      <DependentUpon>FormAgregarArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarCategoria.Designer.cs">
+      <DependentUpon>FormAgregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgregarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarMarca.Designer.cs">
+      <DependentUpon>FormAgregarMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetalleArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetalleArticulo.Designer.cs">
+      <DependentUpon>FormDetalleArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListadoMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoMarca.Designer.cs">
+      <DependentUpon>FormListadoMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListadoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoCategoria.Designer.cs">
+      <DependentUpon>FormListadoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuPrincipal.Designer.cs">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModificarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarArticulo.Designer.cs">
+      <DependentUpon>FormModificarArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModificarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarCategoria.Designer.cs">
+      <DependentUpon>FormModificarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModificarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarMarca.Designer.cs">
+      <DependentUpon>FormModificarMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuArticulo.Designer.cs">
+      <DependentUpon>FormMenuArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAgregarMarca.resx">
+      <DependentUpon>FormAgregarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBusquedaAvanzada.resx">
+      <DependentUpon>FormBusquedaAvanzada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarArticulo.resx">
+      <DependentUpon>FormEliminarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarCategoria.resx">
+      <DependentUpon>FormEliminarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarMarca.resx">
+      <DependentUpon>FormEliminarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarArticulo.resx">
+      <DependentUpon>FormAgregarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarCategoria.resx">
+      <DependentUpon>FormAgregarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetalleArticulo.resx">
+      <DependentUpon>FormDetalleArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoCategoria.resx">
+      <DependentUpon>FormListadoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoMarca.resx">
+      <DependentUpon>FormListadoMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuArticulo.resx">
+      <DependentUpon>FormMenuArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuPrincipal.resx">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificarArticulo.resx">
+      <DependentUpon>FormModificarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificarCategoria.resx">
+      <DependentUpon>FormModificarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificarMarca.resx">
+      <DependentUpon>FormModificarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen-de-prueba-320x240-1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-atrás-161.png" />
+    <None Include="Resources\icons8-atrás-64.png" />
+    <None Include="Resources\icons8-atrás-16.png" />
+    <None Include="Resources\multiply.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\icons8-modificar-16.png" />
+    <Content Include="Resources\loupe_79257.png" />
+    <Content Include="Resources\plus.png" />
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominios\Dominios.csproj">
+      <Project>{17ec276f-77df-48db-ba55-0a804891998f}</Project>
+      <Name>Dominios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{fc3231d5-65a2-43bd-8293-67955c09aeab}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
